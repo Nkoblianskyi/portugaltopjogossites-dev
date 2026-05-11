@@ -91,7 +91,7 @@ export default function PoliticaCookiesPage() {
               Politica de <span style={{ color: "#D4AF37" }}>Cookies</span>
             </h1>
             <p style={{ color: "#666666", fontSize: "0.8rem", letterSpacing: "0.05em" }}>
-              Ultima atualizacao: 1 de maio de 2026 -- Em conformidade com o RGPD e a Lei n.o 41/2004
+              Ultima atualizacao: 2026
             </p>
           </div>
 

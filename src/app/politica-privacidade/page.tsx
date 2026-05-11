@@ -109,7 +109,7 @@ export default function PoliticaPrivacidadePage() {
               Politica de <span style={{ color: "#D4AF37" }}>Privacidade</span>
             </h1>
             <p style={{ color: "#666666", fontSize: "0.8rem", letterSpacing: "0.05em" }}>
-              Ultima atualizacao: 1 de maio de 2026 -- Em conformidade com o RGPD (UE 2016/679)
+              Ultima atualizacao: 2026
             </p>
           </div>
 
