@@ -14,14 +14,14 @@ export function Header() {
           <Link href="/" className="flex items-center gap-3 group" aria-label="portugaltopjogossites - pagina inicial">
             {/* Icon */}
             <div
-              className="flex items-center justify-center w-20 h-20 rounded-xl overflow-hidden shrink-0"
+              className="flex items-center justify-center w-14 h-14 rounded-xl overflow-hidden shrink-0"
               style={{ border: "2px solid #D4AF37" }}
             >
               <Image
                 src="/logo.jpg"
                 alt="portugaltopjogossites logo"
-                width={40}
-                height={40}
+                width={80}
+                height={80}
                 className="w-full h-full object-cover"
               />
             </div>
