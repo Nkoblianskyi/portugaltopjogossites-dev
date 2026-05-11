@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* portugaltopjogossites -- Red, Gold, Black Premium Palette */
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 3 72% 45%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 16%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 0 0% 13%;
+    --muted-foreground: 0 0% 50%;
+    --accent: 43 68% 52%;
+    --accent-foreground: 0 0% 6%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 16%;
+    --input: 0 0% 16%;
+    --ring: 3 72% 45%;
+    --radius: 1rem;
+
+    /* Brand color tokens */
+    --red: #C0272D;
+    --red-light: #E03540;
+    --red-dark: #8E1B20;
+    --gold: #D4AF37;
+    --gold-light: #E8CB5C;
+    --gold-dark: #A88A1E;
+    --black: #0D0D0D;
+    --surface: #161616;
+    --surface-raised: #202020;
+    --border-subtle: #282828;
+    --text-primary: #F2F2F2;
+    --text-secondary: #888888;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: var(--black);
+    color: hsl(var(--foreground));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)),
+      url("/fca61238cb7cd26cea87c406e74d5a77.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--black);
+}
+
+body {
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Rounded card styles */
+.vip-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 1rem;
+}
+
+.vip-card-gold {
+  background-color: var(--surface);
+  border: 1px solid var(--gold);
+  border-radius: 1rem;
+}
+
+/* Gold accent line */
+.gold-line {
+  background-color: var(--gold);
+  height: 2px;
+  width: 100%;
+  border-radius: 9999px;
+}
+
+.gold-line-short {
+  background-color: var(--gold);
+  height: 2px;
+  width: 48px;
+  border-radius: 9999px;
+}
+
+/* Red CTA Button */
+.vip-btn {
+  background-color: var(--red);
+  color: #F2F2F2;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.75rem;
+  transition: background-color 0.2s ease;
+}
+
+.vip-btn:hover {
+  background-color: var(--red-light);
+}
+
+/* Gold Wordmark typography */
+.wordmark {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.wordmark-brand {
+  color: var(--gold);
+}
+
+.wordmark-sub {
+  color: var(--text-primary);
+}
